@@ -1,38 +1,13 @@
-# create-svelte
+# Mockoon svelte example
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+<p>To get this example working you need to add **.env** and **.env.test** files to the project with the following URLS:</p> 
 
-## Creating a project
+### .env
+<code>PUBLIC_BACKEND_URL=https://dummyjson.com</code>
 
-If you're seeing this, you've probably already done this step. Congrats!
+### .env.test
+<code>PUBLIC_BACKEND_URL=http://localhost:3001</code>
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+<p>This way you can run the preview:test and test:pre commands and should get the responses from the Mockoon Server</p>
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+<p>The dev or build environment will make requests to the dummyjson url</p>
