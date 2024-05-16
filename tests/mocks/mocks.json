@@ -1,0 +1,105 @@
+{
+  "uuid": "8375c212-1980-48ad-bf94-3b46daee7995",
+  "lastMigration": 32,
+  "name": "Mocks",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "afd0e5e9-4ade-44ae-a930-16a1310d43f8",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "todos",
+      "responses": [
+        {
+          "uuid": "9d881dad-7670-445c-b409-3d8903c2e5a9",
+          "body": "{\n  \"todos\": [\n    {\n      \"id\": 1,\n      \"todo\": \"Do something nice for someone I care about\",\n      \"completed\": true,\n      \"userId\": 26\n    },\n    {\n      \"id\": 2,\n      \"todo\": \"Memorize the fifty states and their capitals\",\n      \"completed\": false,\n      \"userId\": 48\n    }\n  ],\n  \"total\": 150,\n  \"skip\": 0,\n  \"limit\": 30\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "",
+              "value": "",
+              "invert": false,
+              "operator": "null"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "afd0e5e9-4ade-44ae-a930-16a1310d43f8"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
